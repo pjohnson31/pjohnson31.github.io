@@ -1,22 +1,78 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="">
 
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="widget.js" data-width="200" data-height="200"></script>
-  <script>!function(a,b,c,d){a.Kustomer=c,c._q=[],c._i=[],c.init=function(a){function b(a,b){a[b]=function(){a._q.push([b].concat(Array.prototype.slice.call(arguments,0)))}}for(var d="init clear identify track start describe".split(" "),e=0;e<d.length;e++)b(c,d[e]);c._i.push(a)};var e=b.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.kustomerapp.com/cw/sdk.v1.1.min.js";var f=b.getElementsByTagName("script")[0];f.parentNode.insertBefore(e,f)}(this,document,window.Kustomer||{});
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-// Add your API key here
-Kustomer.init('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjViN2YyNTQyMzdlMDUyMDAxMWQ4MDhiYSIsInVzZXIiOiI1YjdmMjU0MmUyMDUyYjRjOTZlZTljNzciLCJvcmciOiI1YjdmMWQwOGE1MmNjOTgyYjVkNGEyMGEiLCJvcmdOYW1lIjoienp6LXJvdXRpbmctcHJvZHVjdGlvbi1ydW4tYXVnLTIzcmQiLCJ1c2VyVHlwZSI6Im1hY2hpbmUiLCJyb2xlcyI6WyJvcmcudHJhY2tpbmciXSwiYXVkIjoidXJuOmNvbnN1bWVyIiwiaXNzIjoidXJuOmFwaSIsInN1YiI6IjViN2YyNTQyZTIwNTJiNGM5NmVlOWM3NyJ9.XvNMbHSeyjOEDXY0eOzKSb4U0URbBo1W85CxwOGk-_E');
+  <link rel="manifest" href="site.webmanifest">
 
-// Start the chat client
-Kustomer.start();</script>
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.4.93/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+  <script>
+  $(document).ready(function() {
+    $('.inserted-header').load('./header.html');
+    console.log('did it!');
+  });
+  </script>
+
 </head>
 
 <body>
-  <a href="http://shop.peterjohnson.nyc/">
-   <button>Visit Store</button>
-</a>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="inserted-header">
+  </div>
+  <div class="content">
+    <div class="block">
+      <img class="pj-photo" src="./img/headshot-2-bw.png"></img>
+    </div>
+    <div class="block welcome">
+      Welcome! I’m Peter Johnson, but I’m known to most as simply “PJ”. I’m an NYC-based product builder. Check out some of the things I like to make on this site. 
+    </br>
+    </br>
+    Currently I am the VP of Product and a founding team member at Kustomer. At Kustomer, Companies like Amazon, Abercrombie & Fitch, Glossier, and many others use our software to deliver support experiences for hundreds of millions of end-customers around the world. Check us out <a href="https://kustomer.com">here</a>.
+    </br>
+    </br>
+    As an engineer, I like to make stuff. This site contains many of the different physical and digital things I have made in the past decade.
+    </br>
+    </br>
+    <a href="https://www.linkedin.com/in/peter-johnson-78987845/"><i class="mdi mdi-linkedin large"></i></a>
+    <a href="https://github.com/pjohnson31"><i class="mdi mdi-github-circle large"></i></a>
+    <a href="https://twitter.com/pjohnson31"><i class="mdi mdi-twitter large"></i></a>
+    <a href="mailto:me@peterjohnson.nyc"><i class="mdi mdi-email large"></i></a>
+    <a href="sms:6124405663"><i class="mdi mdi-cellphone-iphone large"></i></a>
+    </div>
+  </div>
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>

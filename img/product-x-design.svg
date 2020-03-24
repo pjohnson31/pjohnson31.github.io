@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67">
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(2 -6)">
+      <circle cx="31.5" cy="39.5" r="31.5" stroke="#3E4949" stroke-width="2" transform="matrix(-1 0 0 1 63 0)"/>
+      <circle cx="31.5" cy="39.5" r="27.5" transform="rotate(93 31.5 39.5)"/>
+      <text fill="#3E4949" font-family="Poppins-Medium, Poppins" font-size="12" font-weight="400" letter-spacing="3.62">
+        <tspan x="22.57" y="13">DESIGN</tspan>
+      </text>
+      <circle cx="31.5" cy="39.5" r="16.5" transform="matrix(-1 0 0 1 63 0)"/>
+      <text fill="#3E4949" font-family="Poppins-Medium, Poppins" font-size="12" font-weight="400" letter-spacing="-1.36" transform="matrix(-1 0 0 1 135 0)">
+        <tspan x="43.098" y="24">PRODUC</tspan> <tspan x="85.134" y="24">T</tspan>
+      </text>
+    </g>
+    <text fill="#3E4949" font-family="Poppins-Medium, Poppins" font-size="20" font-weight="400">
+      <tspan x="27.4" y="40.5">X</tspan>
+    </text>
+  </g>
+</svg>

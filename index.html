@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -26,7 +27,9 @@
   <script>
   $(document).ready(function() {
     $('.inserted-header').load('./header.html');
-    console.log('did it!');
+  });
+  $(document).ready(function() {
+    $('.inserted-footer').load('./footer.html');
   });
   </script>
 
@@ -38,11 +41,10 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div class="inserted-header">
-  </div>
+  <div class="inserted-header"></div>
   <div class="content">
     <div class="block">
-      <img class="pj-photo" src="./img/headshot-2-bw.png"></img>
+      <img class="main-photo" src="./img/presentation.jpeg"></img>
     </div>
     <div class="block welcome">
       Welcome! I’m Peter Johnson, but I’m known to most as simply “PJ”. I’m an NYC-based product builder. Check out some of the things I like to make on this site. 
@@ -58,9 +60,10 @@
     <a href="https://github.com/pjohnson31"><i class="mdi mdi-github-circle large"></i></a>
     <a href="https://twitter.com/pjohnson31"><i class="mdi mdi-twitter large"></i></a>
     <a href="mailto:me@peterjohnson.nyc"><i class="mdi mdi-email large"></i></a>
-    <a href="sms:6124405663"><i class="mdi mdi-cellphone-iphone large"></i></a>
+    <a href="sms:6124401239"><i class="mdi mdi-cellphone-iphone large"></i></a>
     </div>
   </div>
+  <div class="inserted-footer"></div>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>

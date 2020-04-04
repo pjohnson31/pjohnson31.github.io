@@ -12,6 +12,7 @@
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
   <link rel="manifest" href="site.webmanifest">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <link rel="shortcut icon" type="image/png" href="./favicon.png" />
@@ -28,6 +29,10 @@
     $(document).ready(function() {
       $('.inserted-header').load('./header.html');
     });
+
+  $(document).ready(function() {
+    $('.inserted-footer').load('./footer.html');
+  });
   </script>
 </head>
 
@@ -40,13 +45,13 @@
   <div class="inserted-header">
   </div>
   <div class="content">
-    <div class="content">
       <div class="block">
         <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
-<div class="pa-gallery-player-widget" style="width:650px; height:600px"
+<div class="pa-gallery-player-widget" style="width:650px; height:600px; position: relative; left: -4em;"
   data-link="https://photos.app.goo.gl/wzmCoSY7VQCbZ1xv7"
   data-title="Arcade Machine tabletop"
   data-background-color="#2cb9a1">
+  <object data="https://lh3.googleusercontent.com/7Tz55_4Wso_h_8zwKQ1CGzXQmEHrplEJI43VwBnhW9RSgSEj52yFOwsSgwja73cZ0J_RIH8cbd9urx4MzqI3DOnsp_ZDWHho110d-THW09F3YUP0FLFUHZacaX7GE_YZ4Y9MHWpr7g=w1920-h1080"></object>
   <object data="https://lh3.googleusercontent.com/MRTshrKBNU8Fdhii9AqZoakc3xpXIUPtRFb3GKNmnPqidLVmVY0hXxtL5SY_DYyiY2YqLBKKFJ6LfUPaR9FeqwCa49jcadYDUEe8EZCPCIjNKcQwQ8SP4JBc-LyvXkBCwpm8BMyQGg=w1920-h1080"></object>
   <object data="https://lh3.googleusercontent.com/uZTlmygSxN2nCiToYcyhgtJ71739aZUJet0DwfPCW7cyfGz3zPxBQVLpVc29VzjHTrdMm37mz9WkMWY5V_Dw1OOn5KKpEe1UHq85pUMsAswsLgvx2PXUYPyigA8Syy1Kv5d9atdk-A=w1920-h1080"></object>
   <object data="https://lh3.googleusercontent.com/b1W9t_MTqahmoBXT5FRFFdSVa6CWYlsoSTdn2T3hQRRR75504ddul9f70Xh92C66mYPda9Xj9HYN1SG_MK8amC3XTf5l7PoE-0xCJ7O8hBr3kw7lGhqmzl0UMgF8Yl3-gstOZW4s0w=w1920-h1080"></object>
@@ -61,16 +66,25 @@
   <object data="https://lh3.googleusercontent.com/lz2MoyqRWpwVi0asIpQ9xShP_lNfx401BY1x0OyjglQSDfWSQUq_rKyYmU86os-QNxXbT8jGJbN-32AjQY-1wnYtpjfO09NkfoOEMaA2jj_b6Njg69ROJM9QICu82A7kAHAQqsAAXw=w1920-h1080"></object>
   <object data="https://lh3.googleusercontent.com/gaNWrS1LxE_VfcawWGAHB2GRd7EGeyXJLTmAF-8zkYsWZwblbsWc5zx4pxRn55eZvbXToEaWD05x1GouVYChNGfZpe6IVs8lQ6KOPsxIJCVI4DajrYzGF1wHFrWAC6D70hUCrV4SrQ=w1920-h1080"></object>
   <object data="https://lh3.googleusercontent.com/0Wb039kbSDFNK6jNOjsnDQ-ez12lA7H59-qe6ADDGMpHvTa225_Y1gFWvgM5HJFG7uP38_xLp2vbBsCUWz4uElDgTtP5VwjheyWzpiJ8vQwnehoz0_nNn6f89WtdTIdtvcXjIlrh8g=w1920-h1080"></object>
-  <object data="https://lh3.googleusercontent.com/7Tz55_4Wso_h_8zwKQ1CGzXQmEHrplEJI43VwBnhW9RSgSEj52yFOwsSgwja73cZ0J_RIH8cbd9urx4MzqI3DOnsp_ZDWHho110d-THW09F3YUP0FLFUHZacaX7GE_YZ4Y9MHWpr7g=w1920-h1080"></object>
 </div>
 
       </div>
       <div class="block">
-        <zero-md src="./hardware.md"></zero-md>
+        <zero-md src="./pacman.md"><template>
+          <!-- Wrap your own CSS styles inside a `<style>` tag -->
+          <style>
+            /* My own markdown styles */
+
+            /* My own highlight styles */
+            code p { color: blue; }
+            ...
+          </style>
+        </template></zero-md>
         <div class="inserted-body"></div>
       </div>
 
   </div>
+  <div class="inserted-footer"></div>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function() {

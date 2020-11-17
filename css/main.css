@@ -274,7 +274,7 @@ p {
 
 .pj-photo {
     width: 100%;
-    max-width: 55em;
+    max-width: 30em;
     height: auto;
     -webkit-filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, .5));
     filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, .5));

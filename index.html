@@ -19,20 +19,21 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/3.4.93/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
   <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
 </script>
-  <script>
+  <!-- <script>
   $(document).ready(function() {
     $('.inserted-header').load('./header.html');
   });
   $(document).ready(function() {
     $('.inserted-footer').load('./footer.html');
   });
-  </script>
+  </script> -->
 
 </head>
 
@@ -42,7 +43,8 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div class="inserted-header"></div>
+  <script defer src="header.js"></script>
+  <header id="app-header"></header>
   <div class="content">
     <div class="block">
       <img class="main-photo" src="./img/presentation.jpeg"></img>

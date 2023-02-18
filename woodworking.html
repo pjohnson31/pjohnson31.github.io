@@ -25,14 +25,7 @@
 <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
 
   </script>
-  <script>
-    $(document).ready(function() {
-      $('.inserted-header').load('./header.html');
-    });
-    $(document).ready(function() {
-    $('.inserted-footer').load('./footer.html');
-  });
-  </script>
+
 </head>
 
 <body>
@@ -41,8 +34,8 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div class="inserted-header">
-  </div>
+  <script defer src="header.js"></script>
+  <header id="app-header"></header>
   <div class="content">
     <div class="block">
       <a href="https://photos.app.goo.gl/yetZYL4QrvsQXV3q6">

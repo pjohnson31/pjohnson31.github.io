@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="robots" content="noindex">
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,7 +29,8 @@
     $(document).ready(function() {
       $('.inserted-header').load('./header.html');
     });
-    $(document).ready(function() {
+
+  $(document).ready(function() {
     $('.inserted-footer').load('./footer.html');
   });
   </script>
@@ -46,14 +46,13 @@
   <header id="app-header"></header>
   </div>
   <div class="content">
-    <div class="block">
-      <a href="https://www.kustomer.com">
-        <img class="falcon-photo" src="./img/kustomer.png"></img>
-      </a>
-    </div>
       <div class="block">
-        <zero-md src="./kustomer.md"><template>
+        <zero-md src="./comingsoon.md"><template>
+          <!-- Wrap your own CSS styles inside a `<style>` tag -->
           <style>
+            /* My own markdown styles */
+
+            /* My own highlight styles */
             code p { color: blue; }
             ...
           </style>

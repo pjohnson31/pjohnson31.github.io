@@ -1,3 +1,5 @@
+// import { appFooter } from './footer.html';
+
 let appHeader = `
     <nav>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -8,8 +10,9 @@ let appHeader = `
       <div id="myLinks">
         <a href="./falcon-golf.html">Falcon Golf</a>
         <a href="./kustomer.html">Kustomer</a>
-        <a href="#">Airtime</a>
+        <a href="./coming-soon.html">Airtime</a>
         <a href="./pacman.html">Arcade Machine</a>
+        <a href="./coming-soon.html.html">3D Design</a>
         <a href="./woodworking.html">Woodworking</a>
         <a href="./about.html"> About </a>
       </div>
@@ -21,31 +24,47 @@ let appHeader = `
     
     <div class="header">
       <span class="header-item" href="https://www.w3schools.com">
-        Design
+        Pixels
         <div class="dropdown-content">
           <a href="./falcon-golf.html">Falcon Golf</a>
         </div>
       </span>
       <span class="header-item" href="https://www.w3schools.com">
-        Software
+        Code
         <div class="dropdown-content">
           <a href="./kustomer.html">Kustomer</a>
-          <a href="#">Airtime</a>
+          <a href="./coming-soon.html">Airtime</a>
         </div>
       </span>
       <a href="./index.html"><img class="pj-logo-header" src="./img/pj-logo.svg"></img></a>
       <span class="header-item" href="https://www.w3schools.com">
-        Hardware
+        Wood
         <div class="dropdown-content">
           <a href="./pacman.html">Arcade Machine</a>
           <a href="./woodworking.html">Woodworking</a>
         </div>
       </span>
-      <a class="header-item" href="./about.html">
-        About
-      </a>
+      <span class="header-item" href="https://www.w3schools.com">
+          Plastics
+      <div class="dropdown-content">
+        <a href="./falcon-golf.html">Falcon Golf</a>
+        <a href="./coming-soon.html">3D Design</a>
+        </div>
+      </span>
     </div>
     <hr>    
     </nav>
 `;
 document.getElementById("app-header").innerHTML = appHeader;
+
+document.getElementById("inserted-footer").innerHTML = appFooter;
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }

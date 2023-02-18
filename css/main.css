@@ -12,6 +12,7 @@
 
 html {
     color: #222;
+    background-color: #C4D2AE;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -86,6 +87,8 @@ textarea {
 
 a {
     position: relative;
+    text-decoration: none;
+
 }
 
 /* ==========================================================================
@@ -115,13 +118,13 @@ hr {
     left: -2rem;
     background-color: #f1f1f1;
     min-width: 180px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
     z-index: 999999999;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
+    color: #487362;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -184,13 +187,14 @@ hr {
     align-self: center;
     width: 6em;
     height: 2em;
-    font-family: Poppins-Medium;
+    font-family: sk-modernist;
     font-size: 18px;
-    color: #4B4B4B;
+    font-weight: bold;
+    /* color: #4B4B4B; */
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: .75em;
-    margin: .25em;
+    margin: .25em 1em;
     text-decoration: none;
     -webkit-animation: 1.4s ease 0s normal forwards 1 fadein;
     animation: 1.4s ease 0s normal forwards 1 fadein;
@@ -212,12 +216,14 @@ hr {
 }
 
 .pj-logo-header:hover {
-    -webkit-filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .3));
-    filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .3));
+    fill:#A1512B;
+    /* -webkit-filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .3));
+    filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .3)); */
+
 }
 
 .content {
-    font-family: Poppins-Medium;
+    font-family: sk-modernist;
     z-index: 1;
     display: flex;
     flex-direction: row;
@@ -226,19 +232,19 @@ hr {
     position: relative;
     -webkit-animation: 1.5s ease 0s normal forwards 1 fadein;
     animation: 1.5s ease 0s normal forwards 1 fadein;
-    margin: 4em 0;
-    padding: 2em 6em;
-    background-color: #2CB9A1;
+    margin: 1em 0;
+    /* padding: 2em 6em; */
+    background-color: #C4D2AE;
     min-height: 30em;
 
 }
 
 .markdown-body * {
-    font-family: Poppins-Medium;
+    font-family: sk-modernist;
 }
 
 p {
-    font-family: Poppins-Medium;
+    font-family: sk-modernist;
 }
 
 .block {
@@ -256,16 +262,20 @@ p {
     display: block;
     padding: 2em 0;
     min-width: 10em;
-    font-family: Poppins-Medium;
-    font-size: 18px;
+    font-family: sk-modernist;
+    font-size: 1em;
     color: #3E4949;
+    font-family: 'Sk-Modernist';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
     /* text-align: justify; */
 }
 
 .large {
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 0 .4em;
-    color: #492B81;
+    color: #487362;
 }
 
 .image-sub-text {
@@ -284,8 +294,8 @@ p {
     max-width: 45em;
     width: 100%;
     height: auto;
-    -webkit-filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, .5));
-    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, .5));
+    /* -webkit-filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, .5));
+    filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, .5)); */
 }
 
 .falcon-photo {
@@ -345,7 +355,7 @@ p {
     padding: 14px 16px;
     text-decoration: none;
     display: block;
-    font-family: Poppins-Medium;
+    font-family: sk-modernist;
     font-size: 18px;
     color: #4B4B4B;
     text-align: center;
@@ -371,7 +381,24 @@ p {
     color: black;
   }
   
-
+  a:link {
+    color: #487362;
+  }
+  
+  /* visited link */
+  a:visited {
+    /* color: green; */
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #A1512B;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
 
 
 
@@ -479,6 +506,7 @@ p {
     }
     .header-item {
         order: 1;
+        margin: .25em;
     }
     .header {
         display: none;
@@ -516,7 +544,7 @@ p {
 
     a,
     a:visited {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     a[href]:after {
@@ -579,23 +607,26 @@ p {
     100% { transform: translate3d(-100%, 0, 0); }
   }
   .tcontainer{
-    position: absolute;
+    position: fixed;
     width: 100%;
     overflow: hidden;
     bottom: 0;
     color:white;
-    font-family: Poppins-Medium;
+    font-family: sk-modernist;
     font-size: 16px;
-    text-transform: uppercase;
+    z-index: 99;
+    /* text-transform: uppercase; */
   }
   .ticker-wrap {
+    z-index: 99;
     width: 100%;
     padding-left: 100%;
-    background-color:#A4BABA;
+    background-color:#C4D2AE;
     padding-top: 4px;
     padding-bottom: 4px;
   }
   .ticker-move {
+    z-index: 99;
     display: inline-block;
     white-space: nowrap;
     padding-right: 100%;
@@ -624,5 +655,8 @@ p {
     text-decoration: none;
   }
 
-
+#kustomer-🔗 
+    a:link {
+        color: #487362;
+      }
   
